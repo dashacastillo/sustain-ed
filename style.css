@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url(Raleway\Raleway-VariableFont_wght.ttf);
+  font-weight: bold;
+}
+
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: "Raleway", sans-serif; /* this should be the rest of the output you got from Google fonts */
+  font-weight: bold;
+}
+
+body {
+  margin-top: 80px;
+  }
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  scroll-margin-top: 80px;
+
+  color: #006D5B;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  /*align-items: center;
+  text-align: center;*/
+  letter-spacing: 0.04em;
+
+  color: #006D5B;  
+}
+
+h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #006D5B;  
+}
+
+p { /* check below for left- and right-aligned columns */
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #006D5B;
+}
+
+/* left-aligned p tag column */
+.l {
+  align-items: left;
+  text-align: left;
+}
+
+/* right-aligned p tag column */
+.r {
+  align-items: right;
+  text-align: right;
+}
+
+
+li {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: list-item;
+  align-items: left;
+  text-align: left;
+  letter-spacing: 0.04em;
+
+  color: #006D5B;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.pfp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pfp: hover {
+  background-color: #FFF4CB;
+  color: rgba(207, 241, 186, 1);
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Add a black background color to the top navigation */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(207, 241, 186, 1);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: auto; /* change to 100% for full width */
+  height: 50px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #006D5B;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #006D5B;
+  color: rgba(207, 241, 186, 1);
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #006D5B;
+  color: rgba(207, 241, 186, 1);
+} 
+
+.main-rounded-edges {
+  background-color: rgba(255, 234, 182, 1);
+  width: 75%;
+  height: 40px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.left-rounded-edges {
+  background-color: #FFF4CB;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 30px;
+
+  margin-left: 25%; 
+}
+
+.right-rounded-edges {
+  background-color: #FFF4CB;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 75%;
+  height: 30px;
+}
+
+.logo { /* centers the logo correctly on nav bar */
+  position: relative;
+  top: -15px;
+}
+
+.navtext {
+  position: relative;
+  top: -7px;
+}
