@@ -63,7 +63,7 @@ p { /* check below for left- and right-aligned columns */
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -71,16 +71,23 @@ p { /* check below for left- and right-aligned columns */
   color: #006D5B;
 }
 
-/* left-aligned p tag column */
-.l {
+.l { /* left-aligned p tag column */
   align-items: left;
   text-align: left;
 }
 
-/* right-aligned p tag column */
-.r {
+.r { /* right-aligned p tag column */
   align-items: right;
   text-align: right;
+}
+
+a { /* style for links, default is underlined purple text */
+  color: #006D5B;
+}
+
+a:hover {
+  color:  white;
+  background-color: #006D5B;
 }
 
 
@@ -105,20 +112,47 @@ li {
   
 }
 
-.pfp {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Parent Container */
+.content_img{
+ position: relative;
+ left: 10%; 
+ right: 10%;
 }
 
-.pfp: hover {
-  background-color: #FFF4CB;
-  color: rgba(207, 241, 186, 1);
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ top: 0;
+ left: 15%;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+
+ font-size: 12.5px;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+}
+
+.content_img:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.9; 
 }
 
 .column {
   float: left;
   width: 50%;
+  text-align: right;
+  align-items: right;
 }
 
 /* Clear floats after the columns */
