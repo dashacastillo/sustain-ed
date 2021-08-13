@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url(Raleway\Raleway-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+
+html {
+  font-size: 10px;
+  /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: "Raleway", sans-serif;
+  /* this should be the rest of the output you got from Google fonts */
+  font-weight: normal;
+
+  /* CHANGE THIS WHEN YOU FIGURE OUT HOW TO MAKE PFPS BETTER */
+  overflow-x: scroll;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(252, 246, 238);
+}
+
+body {
+  margin-top: 80px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  scroll-margin-top: 80px;
+  padding: 15px;
+  padding-left: 70px;
+  color: #006D5B;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*align-items: center;
+  text-align: center;*/
+  letter-spacing: 0.04em;
+  color: #006D5B;
+  padding: 10px;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #006D5B;
+}
+
+p {
+  /* check below for left- and right-aligned columns */
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #006D5B;
+}
+
+.l {
+  /* left-aligned p tag column */
+  align-items: left;
+  text-align: left;
+  margin: 0 100px 0 20px;
+  width: 80%;
+}
+
+.r {
+  /* right-aligned p tag column */
+  align-items: right;
+  text-align: right;
+  width: 80%;
+  margin-left: 50px;
+}
+
+a {
+  /* style for links, default is underlined purple text */
+  color: #006D5B;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  color: #5AA16E;
+  /* background-color: #006D5B; */
+}
+
+li {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: list-item;
+  align-items: left;
+  text-align: left;
+  letter-spacing: 0.04em;
+  color: #006D5B;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  font-size: 80px;
+  padding-top: 200px;
+  position: absolute;
+  bottom: 100px;
+  right: 200px;
+  color: #006D5B;
+  z-index: 2;
+}
+
+.title-container {
+  display: flex;
+}
+
+.title-img {
+  width: 100%;
+  height: auto;
+}
+
+.add-button {
+  background-color: #ffc5b6;
+  border-radius: 50px;
+  /* border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; */
+  height: 50px;
+  align-content: center;
+  justify-content: center;
+  margin-right: 25%;
+}
+
+/* Parent Container */
+
+.content_img {
+  position: relative;
+  margin: 20px;
+  left: 10%;
+  right: 10%;
+}
+
+/* Child Text Container */
+
+.content_img div {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  font-size: 12.5px;
+}
+
+/* Hover on Parent Container */
+
+.content_img:hover {
+  cursor: pointer;
+}
+
+.content_img:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.9;
+  z-index: 3;
+  background-color: #CFF1BA;
+  border-radius: 5px;
+  color: #006D5B;
+  position: absolute;
+  left: -20px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: right;
+  align-items: right;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 150px 0 120px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Add a black background color to the top navigation */
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(248, 229, 204);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* change to 100% for full width */
+  height: 50px;
+  padding: 5px;
+  /* border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px; */
+  z-index: 10;
+}
+
+/* Style the links inside the navigation bar */
+
+.navbar a {
+  float: left;
+  color: #006D5B;
+  text-align: center;
+  padding: 10px 20px 20px 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+
+.navbar a:hover {
+  color: #3caf59;
+  /* background-color: #006D5B; */
+  /* color: rgba(207, 241, 186, 1); */
+}
+
+/* Add a color to the active/current link */
+
+.navbar a.active {
+  background-color: #006D5B;
+  color: rgba(207, 241, 186, 1);
+}
+
+.main-rounded-edges {
+  background-color: rgba(207, 241, 186, 1);
+  width: 30%;
+  height: 40px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.left-rounded-edges {
+  background-color: #FFEAB6;
+  border-radius: 25px;
+  /* border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; */
+  height: 30px;
+  align-content: right;
+}
+
+.right-rounded-edges {
+  background-color: #FFEAB6;
+  border-radius: 25px;
+  /* border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px; */
+  width: 75%;
+  height: 30px;
+}
+
+.logo {
+  /* centers the logo correctly on nav bar */
+  position: relative;
+  top: -15px;
+}
+
+/* .navtext {
+  position: relative;
+  vertical-align: middle;
+  top: -7px;
+} */
