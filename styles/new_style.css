@@ -97,8 +97,9 @@ p {
   /* right-aligned p tag column */
   align-items: right;
   text-align: right;
+  margin: 0 100px 0 ;
   width: 80%;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 a {
@@ -308,8 +309,9 @@ li {
   top: -15px;
 }
 
-/* .navtext {
-  position: relative;
-  vertical-align: middle;
-  top: -7px;
-} */
+.pfp {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
