@@ -197,6 +197,7 @@ li {
 
 .content_img:hover div {
   width: 150px;
+  height: 150px;
   padding: 8px 15px;
   visibility: visible;
   opacity: 0.9;
@@ -206,6 +207,15 @@ li {
   color: #006D5B;
   position: absolute;
   left: -20px;
+  top: -10px
+}
+
+/* this is used for the actual picture (img tag) */
+.pfp {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .column {
@@ -307,11 +317,4 @@ li {
   /* centers the logo correctly on nav bar */
   position: relative;
   top: -15px;
-}
-
-.pfp {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
 }
