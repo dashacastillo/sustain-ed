@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 506 261.1" style="enable-background:new 0 0 506 261.1;" xml:space="preserve">
 <style type="text/css">
@@ -8,11 +8,11 @@
 	.st2{fill:#CEA084;}
 	.st3{fill:none;}
 	.st4{fill:#006D5B;}
-	.st5{font-family:'Raleway-Light';}
+	.st5{font-family:'Raleway-Medium';}
 	.st6{font-size:32px;}
-	.st7{font-family:'Raleway-Regular';}
+	.st7{font-family:'Raleway-Bold';}
 	.st8{font-size:52px;}
-	.st9{font-family:'Raleway-Italic';}
+	.st9{font-family:'Raleway-BoldItalic';}
 </style>
 <g id="Layer_2_1_">
 	<path class="st0" d="M152.6,117.3l0.2-0.7c2.4-6.8,9.9-27.7,29-44.7c9.5-8.5,19.2-14.2,19.9-11.5c0.3,1.1,0,1.8,0.6,4.4
@@ -43,7 +43,11 @@
 <rect x="247.7" y="91.3" class="st3" width="185.3" height="68"/>
 <text transform="matrix(1 0 0 1 247.6602 114.6599)" class="st4 st5 st6">welcome to</text>
 <rect x="228.3" y="138.6" class="st3" width="248.5" height="111.1"/>
-<text transform="matrix(1 0 0 1 228.2568 176.51)" class="st4 st7 st8">Sustain</text>
+<text transform="matrix(1 0 0 1 228.2568 176.51)" class="st4 st7 st8">sustain</text>
 <rect x="404.1" y="137.8" class="st3" width="71.4" height="111.1"/>
 <text transform="matrix(1 0 0 1 404.1172 175.7829)" class="st4 st9 st8">ed</text>
+<rect x="-54" y="-33" class="st3" width="1120" height="432"/>
+<rect x="-99" y="563" class="st3" width="135" height="152"/>
+<rect x="-110" y="-138" class="st3" width="77" height="174"/>
+<rect x="-230" y="556" class="st3" width="345" height="121"/>
 </svg>
