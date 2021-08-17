@@ -10,9 +10,6 @@ html {
   font-family: "Raleway", sans-serif;
   /* this should be the rest of the output you got from Google fonts */
   font-weight: normal;
-
-  /* CHANGE THIS WHEN YOU FIGURE OUT HOW TO MAKE PFPS BETTER */
-  overflow-x: scroll;
 }
 
 html, body {
