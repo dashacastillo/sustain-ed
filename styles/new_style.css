@@ -102,6 +102,15 @@ p {
   /* margin-left: 50px; */
 }
 
+.c {
+  /* right-aligned p tag column */
+  align-items: center;
+  text-align: center;
+  margin: 0 100px 0 ;
+  width: 80%;
+  /* margin-left: 50px; */
+}
+
 a {
   /* style for links, default is underlined purple text */
   color: #006D5B;
