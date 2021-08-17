@@ -41,14 +41,14 @@
 	c1.4-1.1,2.9-2.1,4.4-3c2.3-1.4,5.5-4.3,9.1-10.9c-0.2,1.4-0.4,2.7-0.6,4.1c-0.8,1.7-1.7,3.6-2.4,5.7c-1,2.8-1.9,5.6-2.5,8.5
 	C159.8,113.3,158.1,115.5,156.7,117.9z"/>
 <rect x="247.7" y="91.3" class="st3" width="185.3" height="68"/>
-<text transform="matrix(1 0 0 1 247.6602 114.6599)" class="st4 st5 st6">welcome to</text>
+<text transform="matrix(1 0 0 1 266.2394 115.3003)" class="st4 st5 st6">welcome to</text>
 <rect x="228.3" y="138.6" class="st3" width="248.5" height="111.1"/>
-<text transform="matrix(1 0 0 1 228.2568 176.51)" class="st4 st7 st8">sustain</text>
+<text transform="matrix(1 0 0 1 202.7879 175.7834)" class="st4 st7 st8">sustain</text>
 <rect x="404.1" y="137.8" class="st3" width="71.4" height="111.1"/>
-<text transform="matrix(1 0 0 1 404.1172 175.7829)" class="st4 st9 st8">ed</text>
+<text transform="matrix(1 0 0 1 377.7122 176.3021)" class="st4 st9 st8">ed</text>
 <rect x="-54" y="-33" class="st3" width="1120" height="432"/>
 <rect x="-99" y="563" class="st3" width="135" height="152"/>
 <rect x="-110" y="-138" class="st3" width="77" height="174"/>
 <rect x="-230" y="556" class="st3" width="345" height="121"/>
-<text transform="matrix(1 0 0 1 773 391)" class="st9" style="font-size:12px;">Lorem ipsum</text>
+<rect x="538" y="95" class="st3" width="21" height="1"/>
 </svg>
