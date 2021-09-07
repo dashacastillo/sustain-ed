@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body class="dfa-body">
+    <div class="dfa-extension-container">
+        <div id="dfa-home" class="dfa-page" style="display: none;">
+            <div class="dfa-header">
+                <div class="dfa-title-container">
+                    <div class="dfa-title-home"> sustain<i>ed</i></div>
+                </div>
+                <div class="dfa-header-text-home"> make more sustainable and<br>conscientious decisions </div>
+                <hr class="dfa-hr">
+            </div>
+            <div class="dfa-questions-container">
+                <div id="dfa-answer" class="dfa-list-home">
+                    <div class="dfa-main-leaf"></div>
+                    <div class="dfa-button-home-text">online clothes shopping?<br>answer these prompts!</div>
+                </div>
+                <div id="dfa-learn" class="dfa-list-home">
+                    <div class="dfa-main-leaf"></div>
+                    <div class="dfa-button-home-text">learn more about sustainable fashion!</div>
+                </div>
+                <div id="dfa-tell" class="dfa-list-home">
+                    <div class="dfa-main-leaf"></div>
+                    <div class="dfa-button-home-text">tell your friends about us!</div>
+                </div>
+            </div>
+            <div class="dfa-comment-container" id="home-resources">
+                <div class="dfa-comment-text">made with &lt3 by MIT students <br><br>
+                    <span class="dfa-comment-subtext">as part of the MIT Design For America Sustainable Fashion Project
+                        <br>
+                        <br> learn more about our project here</span>
+                </div>
+            </div>
+        </div>
+        <div id="dfa-prompts-intro" class="dfa-page">
+            <div class="dfa-header">
+                <div class="dfa-intro-container">
+                    <div class="dfa-intro-header">
+                        <div class="dfa-intro-sub"> welcome to </div>
+                        <div class="dfa-intro"> sustain<i>ed</i></div>
+                    </div>
+                </div>
+                <div class="dfa-intro-text">
+                    If you're seeing this, <br>
+                    you may be making a purchase.
+                    <br><br>
+                    Let's walk through <br>
+                    this
+                    <span style="color: #006D5B">together.</span>
+                </div>
+            </div>
+            <div class="dfa-prompts-images">
+                
+            </div>
+            <div class="dfa-list" id="dfa-button-begin">begin!</div>
+        </div>
+
+
+        <div id="dfa-questions">
+            <!-- insert pages here -->
+        </div>
+
+
+        <div id="dfa-congrats" style="display: none;">
+            <img class="congrats" src="../svg_assets/congrats.gif" alt="Congrats!" />
+        </div>
+        <div id="dfa-reflection" class="dfa-page" style="display: none;">
+            <div class="dfa-header">
+                <div class="dfa-title-container dfa-title-reflect">
+                    <div class="dfa-title"> let's reflect! </div>
+                </div>
+                <div id="stars" class="stars"></div>
+                <div id="summary" class="dfa-header-text-result"></div>
+                <hr class="dfa-hr">
+            </div>
+            <div class="dfa-questions-container dfa-questions-home">
+                <div class="dfa-list dfa-result">
+                    <div class="dfa-main-leaf"></div>
+                    <div class="dfa-button-home-text" id="response1">
+                    </div>
+                </div>
+                <div class="dfa-list dfa-result">
+                    <div class="dfa-main-leaf"></div>
+                    <div class="dfa-button-home-text" id="response2">
+                    </div>
+                </div>
+                <div class="dfa-list dfa-result">
+                    <div class="dfa-main-leaf"></div>
+                    <div class="dfa-button-home-text" id="response3">
+                    </div>
+                </div>
+            </div>
+            <div id="dfa-resources" class="dfa-comment-container" style="margin-bottom: 3px; margin-top: 3px;" >
+                check out these resources for more information!<br>
+            </div>
+        </div>
+        <div id="dfa-about-us" class="dfa-page" style="display: none;">
+            <div class="dfa-header">
+                <div class="dfa-title-container">
+                    <div class="dfa-title">about us</div>
+                </div>
+                <div class="dfa-header-text"> link to website</div>
+                <hr class="dfa-hr">
+            </div>
+        </div>
+        <div id="dfa-more-info" class="dfa-page" style="display: none;">
+            <div class="dfa-header">
+                <div class="dfa-title-container">
+                    <div class="dfa-title">more info</div>
+                </div>
+                <div class="dfa-header-text"> we'll have an external website linked here, so nothing on this page
+                    (but
+                    thanks for clicking!) </div>
+                <hr class="dfa-hr">
+            </div>
+        </div>
+        <div class="dfa-footer">
+            <div class="dfa-arrow-container" id="dfa-arrow-container" style="display:none;">
+                <div id="dfa-left-arrow"></div>
+                <div id="dfa-right-arrow"></div>
+            </div>
+            <div class="dfa-menu-container">
+                <div class="dfa-button-menu" id="dfa-button-home">
+                    <div id="active-button-home" class="active-button-home" style="display:none;">
+                        <div class="dfa-menu-active-leaf"></div>
+                        <div class="dfa-menu-text dfa-menu-active-text">Home</div>
+                    </div>
+                    <div id="inactive-button-home" class="inactive-button-home">
+                        <div class="dfa-menu-inactive-leaf"></div>
+                        <div class="dfa-menu-text dfa-menu-inactive-text">Home</div>
+                    </div>
+                </div>
+                <div class="dfa-button-menu" id="dfa-button-prompts">
+                    <div id="active-button-prompts" class="active-button-prompts">
+                        <div class="dfa-menu-active-sun"></div>
+                        <div class="dfa-menu-text dfa-menu-active-text">Prompts</div>
+                    </div>
+                    <div id="inactive-button-prompts" class="inactive-button-prompts" style="display: none;">
+                        <div class="dfa-menu-inactive-sun"></div>
+                        <div class="dfa-menu-text dfa-menu-inactive-text">Prompts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/react.development.js"></script>
+    <script src="../js/react-dom.development.js"></script>
+    <script src="../components/content.js"></script>
+    <script src="../components/container.js"></script>
+</body>
+
+</html>
+
+

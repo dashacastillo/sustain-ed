@@ -1,0 +1,704 @@
+$blue-green-color : #5AA194
+$light-green-color: #CFF1BA
+$green-color: 		#5AA16E
+$dark-green-color: 	#006D5B 
+$dark-yellow-color: #ffd52c 
+$yellow-color: 		#FFEAB6 
+$light-yellow-color: #FFF4CB 
+$slight-white-color: #fffffb
+$dark-red-color: #cc7070
+
+$primary-color: $green-color
+$light-text-on-light: $green-color
+$dark-text-on-light: $dark-green-color
+$light-text-on-dark: $light-yellow-color 
+$background-color: $slight-white-color
+
+$popup-width: 300px
+$tablet-width: 850px
+$desktop-width: 1920px
+
+@mixin extension
+	@media (max-width: $popup-width - 1px)
+		@content
+
+@mixin tablet 
+	@media (min-width: $popup-width) and (max-width: $tablet-width - 1px)
+		@content
+
+@mixin desktop
+	@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px)
+		@content
+
+@mixin huge
+	@media (min-width: $desktop-width)
+		@content
+  
+
+$extension-width: 289px
+$extension-height: 538px
+
+$menu-height: 60px
+
+$title-height: 75px
+$title-width: $extension-width*.9
+$button-option-height: $extension-height*.1
+$top-margin: $extension-height*.05
+$side-margin: $extension-width*.1
+
+$title-font: 'Work Sans', sans-serif
+$primary-font: 'Raleway', sans-serif
+$primary-font-size: $extension-width*.05
+$small-font-size: $primary-font-size*.9
+$subheader-font-size: $primary-font-size*1.1
+$medium-font-size: $primary-font-size*1.4
+$title-font-size: $title-height*.6
+$subtitle-font-size: $title-font-size*.25
+
+$desktop-title-font-size: 45px
+$tablet-title-font-size: 25px
+$huge-title-font-size: 50px
+
+$desktop-medium-font-size: 40px
+$tablet-medium-font-size: 30px
+$huge-medium-font-size: 45px
+
+html
+	height: 100%
+.dfa-body
+	min-height: 100%
+	margin: 0px
+	color: $dark-text-on-light
+	font-family: $primary-font
+	font-size: $primary-font-size
+	display: flex
+	flex-direction: column
+	@include extension
+		width: $extension-width
+		height: $extension-height	
+.dfa-exit 
+	background-image: url("../svg_assets/exitbutton.svg")
+	background-repeat: no-repeat
+	background-position: right
+	position: absolute
+	right: 0
+	height: $top-margin
+	width: $top-margin
+	&:hover
+		cursor: pointer
+.dfa-extension-container
+	width: 100%
+	bottom: 0
+	padding: 0
+	margin: 0
+	position: relative
+	background-color: $background-color
+	text-align: center
+	display: flex
+	flex-direction: column
+	flex-grow: 1
+	justify-content: space-between
+	cursor: default
+.dfa-page
+	-webkit-animation-name: fadeInUp
+	animation-name: fadeInUp
+	-webkit-animation-duration: 5000ms
+	animation-duration: 5000ms
+	margin-top: $top-margin
+	@include extension
+		min-height: 530px
+	@include tablet 
+		min-height: 650px
+	@include desktop
+		min-height: 650px
+	@include huge 
+		min-height: 800px
+.dfa-header-text-home
+	margin: $top-margin*.7
+	font-size: $primary-font-size
+	text-align: center
+	@include tablet
+		font-size: $tablet-title-font-size
+	@include desktop
+		margin-top: 0px
+		margin-bottom: 0px
+		font-size: 35px
+		text-align: right
+	@include huge
+		font-size: 40px
+		text-align: right
+.dfa-header-text-result
+	margin: $top-margin*.7
+	font-size: 11px
+	text-align: center
+	@include tablet
+		font-size: 15px
+	@include desktop
+		font-size: 20px
+		text-align: right
+	@include huge
+		font-size: 20px
+		text-align: right
+.dfa-header-text
+	margin: $top-margin*.5
+	font-size: $subheader-font-size
+	text-align: right
+	width: 80%
+	float: right
+	text-wrap: balance
+	@include tablet
+		font-size: 20px
+	@include desktop
+		font-size: 25px
+	@include huge
+		font-size: 30px
+.dfa-title-container
+	height: $title-height*1.1
+	width: $title-width
+	background-color: $light-green-color
+	border-radius: 0px $title-height $title-height 0px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	@include tablet 
+		height: 110px
+		width: 300px
+	@include desktop
+		height: 150px
+		width: 500px
+	@include huge 
+		height: 160px
+		width: 500px
+.dfa-title-reflect
+	@include extension
+		height: 60px
+.dfa-title-home
+	font-size: $title-font-size
+	font: $title-font
+	letter-spacing: $title-font-size*.04
+	@include tablet
+		font-size: 55px
+	@include desktop
+		font-size: 75px
+	@include huge
+		font-size: 80px 
+.dfa-title 
+	font-size: $title-font-size/2
+	font: $title-font
+	letter-spacing: $title-font-size*.04/2
+	width: 90%
+	@include tablet
+		font-size: 27px
+	@include desktop
+		font-size: 35px
+	@include huge
+		font-size: 35px 
+.dfa-subtitle
+	font-size: $subtitle-font-size
+	padding-top: 5px
+.dfa-intro-container
+	height: 130px
+	width: $title-width
+	background-color: $light-green-color
+	border-radius: 0px 130px 130px 0px
+	display: flex
+	flex-direction: column
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	@include tablet 
+		height: 150px
+		width: 80%
+		max-width: 380px
+	@include desktop
+		height: 180px
+		width: 400px
+	@include huge 
+		height: 230px
+		width: 480px
+.dfa-intro-header
+	margin-left: $side-margin
+.dfa-intro-sub
+	font-size: 25px
+	letter-spacing: 2px
+	padding-top: 10px
+	text-align: left
+	@include tablet 
+		font-size: 30px
+	@include desktop
+		font-size: 40px
+	@include huge 
+		font-size: 50px
+.dfa-intro
+	font-size: 40px
+	letter-spacing: 3px
+	padding-bottom: 10px
+	text-align: left
+	@include tablet 
+		font-size: 45px
+	@include desktop
+		font-size: 60px
+	@include huge 
+		font-size: 70px
+.dfa-intro-text
+	margin: $side-margin
+	margin-bottom: 0px
+	color: $blue-green-color
+	text-align: left
+	font-size: $medium-font-size
+	font-family: 'Raleway', sans-serif
+	@include tablet
+		font-size: 25px
+	@include desktop
+		font-size: $desktop-medium-font-size
+		text-align: right
+	@include huge 
+		font-size: $huge-medium-font-size
+		text-align: right
+.dfa-questions-container
+	margin-top: 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-end
+.dfa-list-home
+	margin-top: $extension-height*.01
+	height: $button-option-height
+	width: $extension-width*.85
+	background-color: $yellow-color
+	border-radius: 100px 0px 0px 100px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: $small-font-size
+	&:hover
+		background-color: $dark-yellow-color
+		cursor: pointer
+	@include tablet
+		height: 65px
+		width: 320px
+		font-size: 15px
+	@include desktop
+		height: 65px
+		width: 45%
+		font-size: 20px
+	@include huge
+		height: 70px
+		width: 45%
+		font-size: 20px
+.dfa-prompts-images
+	display: flex
+	height: $extension-height*.35
+	flex-direction: row
+	justify-content: flex-end
+	align-items: flex-end
+	background-image: url("../svg_assets/hand_and_leaf_bkg.svg")
+	background-repeat: no-repeat
+	background-size: cover
+	@include tablet 
+		height: 260px
+		width: 450px
+	@include desktop
+		width: 50%
+		height: 310px
+		position: absolute
+		top: 320px
+	@include huge 
+		height: 500px
+		width: 650px
+		position: absolute
+		top: 250px
+.dfa-list, .dfa-question, .dfa-checklist
+	height: $button-option-height
+	margin-bottom: 10px
+	width: $extension-width*.85
+	background-color: $yellow-color
+	border-radius: 200px 0px 0px 200px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: $small-font-size
+	@include tablet
+		height: 65px
+		width: 320px
+		font-size: 15px
+	@include desktop
+		height: 65px
+		width: 400px
+		font-size: 20px
+	@include huge
+		height: 70px
+		width: 400px
+		font-size: 20px
+.dfa-question, .dfa-checklist
+	&:hover
+		cursor: pointer
+		background-color: $dark-yellow-color
+.dfa-question-active, .dfa-checklist-active
+	height: $button-option-height
+	width: $extension-width*.90
+	margin-bottom: 10px
+	background-color: $light-green-color
+	border-radius: 200px 0px 0px 200px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: $small-font-size
+	@include tablet
+		height: 65px
+		width: 320px
+		font-size: 15px
+	@include desktop
+		height: 65px
+		width: 400px
+		font-size: 20px
+	@include huge
+		height: 70px
+		width: 400px
+		font-size: 20px
+.dfa-no-bottom
+	margin-bottom: 0px
+#dfa-button-begin
+	height: $extension-height*.1
+	width: $extension-width*.4
+	font-size: $subheader-font-size
+	border-radius: 100px 0px 0px 100px
+	position: absolute
+	right: 0px
+	margin:0px 0px $menu-height/2 0px
+	&:hover
+		cursor: pointer
+	@include extension
+		top: 400px
+		right: 0px
+	@include tablet
+		top: 500px
+		height: 65px
+		width: 40% 
+		font-size: 20px
+	@include desktop
+		height: 80px
+		width: 260px 
+		font-size: 30px
+		top: 500px
+	@include huge 
+		height: 80px
+		width: 260px
+		font-size: 30px
+		top: 600px
+.dfa-comment-container
+	height: $extension-height*.1
+	width: $extension-width*.85
+	font-size: $small-font-size
+	border-radius: 0px 100px 100px 0px
+	background-color: $light-yellow-color
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 20px
+	padding: 10px
+	&:hover
+		background-color: $light-green-color
+		cursor: pointer
+	@include tablet 
+		height: 100px
+		width: 350px
+		font-size: 17px
+	@include desktop
+		height: 90px
+		width: 400px
+		font-size: 20px
+	@include huge 
+.dfa-comment-text
+	line-height: 6px
+	@include tablet 
+		line-height: 10px
+	@include desktop
+		line-height: 10px
+	@include huge 
+		line-height: 10px
+.dfa-comment-subtext
+	font-size: 8px
+	@include tablet 
+		font-size: 11px
+	@include desktop
+		font-size: 13px
+	@include huge 
+		font-size: 13px
+.dfa-arrow-container
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin: 10px
+	height: 30px
+	@include desktop 
+		height: 30px
+	@include huge
+		height: 35px
+	#dfa-left-arrow
+		background-image: url("../svg_assets/arrow.svg")
+		background-repeat: no-repeat
+		background-position: center
+		transform: scaleX(-1)
+		height: 25px
+		width: 15%
+		@include desktop 
+			height: 30px
+			width: 30px
+		@include huge
+			height: 35px
+			width: 35px
+		&:hover
+			cursor: pointer
+	#dfa-right-arrow
+		background-image: url("../svg_assets/arrow.svg")
+		background-repeat: no-repeat
+		background-position: center
+		height: 25px
+		width: 15%
+		@include desktop 
+			height: 30px
+			width: 30px
+		@include huge
+			height: 35px
+			width: 35px
+		&:hover
+			cursor: pointer
+.dfa-button-menu
+	width: 50%
+	margin-top: 10px
+	cursor: pointer
+.dfa-menu-active-leaf
+	background-image: url("../svg_assets/dark_leaf_rotate.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: 25px
+	@include tablet
+		height: 30px
+	@include desktop 
+		height: 35px
+	@include huge
+		height: 35px
+.dfa-menu-inactive-leaf
+	background-image: url("../svg_assets/light_leaf_rotate.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: 25px
+	@include tablet
+		height: 30px
+	@include desktop 
+		height: 35px
+	@include huge
+		height: 35px
+.dfa-menu-active-sun
+	background-image: url("../svg_assets/dark_sun.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: 25px
+	@include tablet
+		height: 30px
+	@include desktop 
+		height: 35px
+	@include huge
+		height: 35px
+.dfa-menu-inactive-sun
+	background-image: url("../svg_assets/light_sun.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: 25px
+	@include tablet
+		height: 30px
+	@include desktop 
+		height: 35px
+	@include huge
+		height: 35px
+.dfa-menu-text
+	font-size: 10px
+	@include tablet
+		font-size: 12px
+	@include desktop 
+		font-size: 15px
+	@include huge
+		font-size: 15px
+.dfa-menu-inactive-text
+	color: $yellow-color
+.active-button-home
+	background-image: url("../svg_assets/amorphous_blob.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: 100%
+.active-button-prompts
+	background-image: url("../svg_assets/amorphous_blob.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: 100%
+.dfa-footer
+	width: 100%
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: stretch
+	position: absolute
+	bottom: 0
+.dfa-menu-container
+	height: 60px
+	display: flex
+	flex-direction: row
+	background-color: $green-color
+	@include tablet
+		height: 70px
+	@include desktop
+		height: 80px
+	@include huge
+		height: 80px
+.dfa-main-leaf
+	background-image: url("../svg_assets/main_leaf.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: $button-option-height/1.5
+	width: $button-option-height/1.5
+	pointer-events: none
+	@include tablet
+		width: 40px
+		height: 40px
+	@include desktop
+		width: 50px
+		height: 50px
+	@include huge
+		width: 50px
+		height: 50px
+.dfa-empty-leaf
+	background-image: url("../svg_assets/empty_leaf.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: $button-option-height/1.5
+	width: $button-option-height/1.5
+	pointer-events: none
+	@include tablet
+		width: 40px
+		height: 40px
+	@include desktop
+		width: 50px
+		height: 50px
+	@include huge
+		width: 50px
+		height: 50px
+.dfa-empty-check
+	background-image: url("../svg_assets/empty_check.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: $button-option-height/1.5
+	width: $button-option-height/1.5
+	pointer-events: none
+.dfa-checked-leaf
+	background-image: url("../svg_assets/checked_leaf.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: $button-option-height/1.5
+	width: $button-option-height/1.5
+	pointer-events: none
+.dfa-checked
+	background-image: url("../svg_assets/check.svg")
+	background-repeat: no-repeat
+	background-position: center
+	height: $button-option-height/1.5
+	width: $button-option-height/1.5
+	pointer-events: none
+.dfa-button-home-text
+	width: $extension-width*.65
+	pointer-events: none
+	@include tablet
+		width: 250px
+	@include desktop
+		width: 80%
+	@include huge
+		width: 80%
+.dfa-result
+	background-color: $light-green-color
+	height: $button-option-height
+	width: $extension-width*.85
+	background-color: $yellow-color
+	border-radius: 100px 0px 0px 100px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: $small-font-size*.8
+	@include tablet
+		height: 65px
+		width: 320px
+		font-size: 15px
+	@include desktop
+		height: 65px
+		width: 450px
+		font-size: 20px
+	@include huge
+		height: 70px
+		width: 450px
+		font-size: 20px
+hr
+	&.dfa-hr
+		width: 90%
+		border: 1px solid $primary-color
+		margin-right: 0
+
+img.congrats
+	width: $extension-width
+	height: $extension-height
+	position: absolute
+	top: 0
+	left: 0
+
+.dfa-popup-leaf
+	width: 210px
+	height: 140px
+	background-image: url("https://axguo.github.io/sustainable-fashion/svg_assets/popup.svg")
+	background-repeat: no-repeat
+	background-size: cover
+	position: fixed
+	z-index: 100
+	right: 20px
+	top: 150px
+	color: $dark-text-on-light
+	font-family: $title-font
+	font-size: 15px
+	text-align: center
+
+.dfa-popup-exit
+	width: 210px
+	height: 140px
+	background-image: url("https://sustainable-fashion.s3.amazonaws.com/svg_assets/exitbutton.svg")
+	background-repeat: no-repeat
+	background-position: right
+	position: fixed
+	right: 0
+	height: $top-margin
+	width: $top-margin
+	z-index: 101
+	right: 20px
+	top: 150px
+	&:hover
+		cursor: pointer
+
+#dfa-resources
+	@include extension
+		height: 50px
+.zero-stars 
+	background-image: url("../svg_assets/zero_stars.svg")
+.one-stars 
+	background-image: url("../svg_assets/one_stars.svg")
+.two-stars 
+	background-image: url("../svg_assets/two_stars.svg")
+.three-stars 
+	background-image: url("../svg_assets/three_stars.svg")
+.four-stars 
+	background-image: url("../svg_assets/four_stars.svg")
+.five-stars 
+	background-image: url("../svg_assets/five_stars.svg")
+.stars
+	margin-top: 10px
+	background-repeat: no-repeat
+	background-position: center
+	height: 35px
+
+

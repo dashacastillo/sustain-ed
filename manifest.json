@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+    "name": "Sustained",
+    "description": "Helping others build better sustainable shopping habits :)",
+    "version": "0.0.0.2",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/cart/*",
+                "*://*/cart",
+                "*://*/*/cart/*",
+                "*://*/*/cart",
+                "*://*/*/*/cart/*",
+                "*://*/*/*/cart",
+                "*://*/my-bag/*",
+                "*://*/co-cart/*",
+                "*://*/shopping-bag"
+            ],
+            "css": [
+                "popup/popup.css"
+            ],
+            "js": [
+                "components/popup.js",
+                "js/jquery-3.5.1.min.js",
+                "js/react.development.js",
+                "js/react-dom.development.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "48": "icon48.png"
+    },
+    "web_accessible_resources": [
+        "popup/popup.html",
+        "popup/popup.css"
+    ],
+    "permissions": [
+        "*://*/cart/*",
+        "*://*/cart",
+        "*://*/*/cart/*",
+        "*://*/*/cart",
+        "*://*/*/*/cart/*",
+        "*://*/*/*/cart",
+        "*://*/my-bag/*",
+        "*://*/co-cart/*",
+        "*://*/shopping-bag"
+    ]
+}
